@@ -1,0 +1,56 @@
+<div class="rows row__test" id="test">
+  <div class="rows row__test__title">»»» Bài kiểm tra tại 24h</div>
+
+  <div class="rows row__test__part" ng-controller="testCtrl">
+    <!-- <div class="part__category">
+      <ul class="navbar-nav">
+        <li class="nav-item" ng-repeat="subject in subjects" id="category__li">
+          <a class="nav-link" ng-click="selectSubject(subject.Id)">
+            {{ subject.Name }}
+          </a>
+        </li>
+      </ul>
+    </div> -->
+
+    <!-- <div class="part__test">
+      <div class="test">
+        <a
+          class="test__item"
+          ng-repeat="subject in subjects"
+          ng-click="goToTest(subject.Id)"
+          ng-if="subject.Id === selectedSubjectId"
+        >
+          <div class="test__item__img">
+            <img
+              src="./Image/logos/{{ subject.Logo }}"
+              alt="Logo"
+              width="100%"
+              height="70%"
+            />
+          </div>
+          <div class="test__item__title">{{ subject.Name }}</div>
+        </a>
+      </div>
+    </div> -->
+
+    <div class="part__test">
+      <div class="test">
+        <a
+          class="test__item"
+          ng-repeat="subject in subjects"
+          ng-click="goToTest(subject.Id)"
+        >
+          <div class="test__item__img">
+            <img
+              src="./Image/logos/{{ subject.Logo }}"
+              alt="Logo"
+              width="50%"
+              height="100%"
+            />
+          </div>
+          <div class="test__item__title">{{ subject.Name }}</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

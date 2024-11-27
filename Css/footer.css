@@ -1,0 +1,33 @@
+/* ======================= FOOTER ======================= */
+.row__footer {
+  width: 100%;
+  background: #20202a;
+  color: #ffffff;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px 50px 0px;
+}
+
+.footer {
+  width: 30%;
+  font-size: 16px;
+}
+
+.footer__h3 {
+  color: inherit; /* Kế thừa màu từ .row__footer */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer__intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__policy .icon {
+  font-size: 40px;
+}
+/* ====================================================== *

@@ -1,0 +1,46 @@
+<div class="rows row__register" ng-controller="registerCtrl">
+  <form action="" class="form form__register" ng-submit="register()">
+    <div class="card">
+      <a class="login">Register</a>
+      <div class="inputBox">
+        <input
+          type="text"
+          ng-model="registerData.username"
+          required="required"
+          minlength="8"
+        />
+        <span class="user">Username</span>
+      </div>
+
+      <div class="inputBox">
+        <input
+          type="password"
+          ng-model="registerData.password"
+          required="required"
+          minlength="8"
+        />
+        <span>Password</span>
+      </div>
+
+      <div class="inputBox confirmPassword">
+        <input
+          type="password"
+          ng-model="registerData.confirmPassword"
+          required="required"
+          minlength="8"
+        />
+        <span>Confirm Password</span>
+      </div>
+
+      <button type="submit" class="enter">Enter</button>
+    </div>
+  </form>
+  <div class="notification error" ng-if="errorMessage">
+    <i class="fas fa-times-circle"></i>
+    {{ errorMessage }}
+  </div>
+  <div class="notification success" ng-if="successMessage">
+    <i class="fas fa-check-circle"></i>
+    {{ successMessage }}
+  </div>
+</div>

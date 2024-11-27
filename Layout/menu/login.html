@@ -1,0 +1,30 @@
+<div class="rows row__login" ng-controller="loginCtrl">
+  <form action="" class="form form__login" ng-submit="login(loginData)">
+    <div class="card">
+      <a class="login">Login</a>
+      <div class="inputBox">
+        <input type="text" ng-model="loginData.username" required="required" />
+        <span class="user">Username</span>
+      </div>
+
+      <div class="inputBox">
+        <input
+          type="password"
+          ng-model="loginData.password"
+          required="required"
+        />
+        <span>Password</span>
+      </div>
+
+      <div class="forgotPassword">
+        <a href="#!/Layout/menu/forgotPassword">Forgot Password?</a>
+      </div>
+
+      <button class="enter">Enter</button>
+    </div>
+  </form>
+  <div class="notification error" ng-if="errorMessage">
+    <i class="fas fa-times-circle"></i>
+    {{ errorMessage }}
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="rows do__test" ng-controller="doTestCtrl">
+  <h2 class="do__test__title text-center">
+    bài kiểm tra {{ subject.Name }}
+  </h2>
+
+  <div ng-repeat="question in getQuestionsForPage()">
+    <p class="do__test__question">
+      <strong>Câu {{$index + 1 + currentPage * pageSize}}:</strong> {{
+      question.Text }}
+    </p>
+    <ul class="do__test__answer">
+      <li ng-repeat="answer in question.Answers">
+        <label for="">
+          <input
+            type="radio"
+            ng-model="question.userAnswer"
+            value="{{ answer.Id }}"
+          />
+          {{ answer.Text }}
+        </label>
+      </li>
+    </ul>
+  </div>
+
+  <div class="pagination-info" ng-show="showPages() > 1">
+    {{ currentPage + 1 }} / {{ showPages() }}
+  </div>
+
+  <ul class="do__test__button navbar-nav">
+    <li>
+      <a class="nav-link" href="#" ng-click="prevPage($event)">
+        <i class="fas fa-hand-point-left"></i>
+      </a>
+    </li>
+    <li>
+      <a class="nav-link" href="#" ng-click="next($event)">
+        <i class="fas fa-hand-point-right"></i>
+      </a>
+    </li>
+  </ul>
+
+  <button class="btn btn-primary" ng-click="submitTest()">Nộp bài</button>
+  <div class="do__test__ketqua">
+    <div id="ket__qua"></div>
+  </div>
+</div>
