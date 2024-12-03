@@ -66,15 +66,15 @@ app.config(function ($routeProvider) {
     .when("/Test/do_test/:subjectId", {
       templateUrl: "Test/do_test.html",
       controller: "doTestCtrl",
-      resolve: {
-        auth: function ($location) {
-          const loggedInUser = JSON.parse(localStorage.getItem("loggenIn"));
-          if (!loggedInUser) {
-            alert("Login before taking the test");
-            $location.path("/Layout/menu/login");
-          }
-        },
-      },
+      // resolve: {
+      //   auth: function ($location) {
+      //     const loggedInUser = JSON.parse(localStorage.getItem("loggenIn"));
+      //     if (!loggedInUser) {
+      //       alert("Login before taking the test");
+      //       $location.path("/Layout/menu/login");
+      //     }
+      //   },
+      // },
     })
     .when("/Layout/home", {
       templateUrl: "Layout/home.html",
@@ -117,13 +117,13 @@ app.controller("testCtrl", function ($scope, $routeParams, $location) {
 });
 
 app.controller("doTestCtrl", function ($scope, $routeParams, $location) {
-  const loggedInUser = JSON.parse(localStorage.getItem("loggenIn"));
-  if (!loggedInUser) {
-    alert("Login before taking the test");
-    $location.path("/Layout/menu/login");
-  }
-  $scope.loggedInUser = loggedInUser;
-
+  // const loggedInUser = JSON.parse(localStorage.getItem("loggenIn"));
+  // if (!loggedInUser) {
+  //   alert("Login before taking the test");
+  //   $location.path("/Layout/menu/login");
+  // }
+  // $scope.loggedInUser = loggedInUser;
+  
   const subjectId = $routeParams.subjectId;
   const questions = questionsBySubject[subjectId];
   if (!questions) {
@@ -131,31 +131,35 @@ app.controller("doTestCtrl", function ($scope, $routeParams, $location) {
     return;
   }
   $scope.subjects = subjects;
-  $scope.questions = questions;
+
+  // Shuffle questions and answers once during initialization
+  const shuffledQuestions = questions.sort(() => 0.5 - Math.random());
+  shuffledQuestions.forEach(function (question) {
+    question.answers = question.Answers.sort(() => 0.5 - Math.random());
+  });
+  $scope.questions = shuffledQuestions;
 
   $scope.pageSize = 10;
   $scope.currentPage = 0;
 
-  $scope.getQuestionsForPage = function (question) {
-    const shuffledQuestions = $scope.questions.sort(() => 0.5 - Math.random());
-    shuffledQuestions.forEach(function (question) {
-      question.answers = question.Answers.sort(() => 0.5 - Math.random());
-    });
+  // Get questions for the current page without reshuffling
+  $scope.getQuestionsForPage = function () {
     const startIndex = $scope.currentPage * $scope.pageSize;
     const endIndex = startIndex + $scope.pageSize;
-    return shuffledQuestions.slice(startIndex, endIndex);
+    return $scope.questions.slice(startIndex, endIndex);
   };
 
-  // slice(startIndex, endIndex)
   $scope.showPages = function () {
     return Math.ceil($scope.questions.length / $scope.pageSize);
   };
+
   $scope.next = function (event) {
     event.preventDefault();
     if (($scope.currentPage + 1) * $scope.pageSize < $scope.questions.length) {
       $scope.currentPage++;
     }
   };
+
   $scope.prevPage = function (event) {
     event.preventDefault();
     if ($scope.currentPage > 0) {
