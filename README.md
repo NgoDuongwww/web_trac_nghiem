@@ -1,4 +1,4 @@
-# Programming Languages Quiz Website
+# Programming Languages Quiz Website 
 
 Welcome to the Programming Languages Quiz Website project! This web application is designed to help users test their knowledge of various programming languages like JavaScript, PHP, Python, and more.
 
@@ -36,6 +36,3 @@ We welcome contributions! Feel free to open an issue or submit a pull request if
 
 ## Contact
 For inquiries or support, please email us at **ngoduongw2004@gmail.com**.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.

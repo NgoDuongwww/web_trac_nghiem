@@ -178,7 +178,7 @@ app.controller("doTestCtrl", function ($scope, $routeParams, $location) {
     });
     var ket__qua = document.getElementById("ket__qua");
     ket__qua.innerHTML =
-      "Điểm của bài test: " + score + " / " + $scope.questions.length;
+      "Số câu đúng bài kiểm tra: " + score + " / " + $scope.questions.length;
     ket__qua.style.display = "block";
   };
 });
