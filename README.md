@@ -10,7 +10,15 @@ Welcome to the **Programming Languages Quiz Website UI** project! 🎉 This web 
 ## 🔍 Overview
 📝 The website provides an intuitive interface to display quiz lists, questions, and sample feedback.
 
-📌 **Note:** This project is **frontend-only**, meaning it does not include grading or backend logic.
+📌 **Note:** This project is **frontend-only**, meaning it does not include grading or backend logic. Additionally, it is **not yet 100% complete**, and some features are still under development.
+
+<p align="center">
+  <img src="Image/review_1.png" width="600"/><br/>
+</p>
+
+<p align="center">
+  <img src="Image/review_2.png" width="600"/><br/>
+</p>
 
 ---
 ## ✨ Key Features
