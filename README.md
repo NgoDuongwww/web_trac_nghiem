@@ -1,4 +1,8 @@
-# 🚀 Programming Languages Quiz Website UI
+<p align="center">
+ <h1 align="center">Programming Languages Quiz Website</h1>
+</p>
+
+Welcome to the **Programming Languages Quiz Website** project! 🎉 This web application is designed to help users test their knowledge of various programming languages like **JavaScript, PHP, Python, and more**.
 
 Welcome to the **Programming Languages Quiz Website UI** project! 🎉 This web application consists **only of the user interface**, designed to display multiple-choice quizzes about programming languages like **JavaScript, PHP, Python, and more**.
 
