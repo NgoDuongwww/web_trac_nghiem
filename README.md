@@ -1,38 +1,55 @@
-# Programming Languages Quiz Website 
+# 🚀 Programming Languages Quiz Website UI
 
-Welcome to the Programming Languages Quiz Website project! This web application is designed to help users test their knowledge of various programming languages like JavaScript, PHP, Python, and more.
+Welcome to the **Programming Languages Quiz Website UI** project! 🎉 This web application consists **only of the user interface**, designed to display multiple-choice quizzes about programming languages like **JavaScript, PHP, Python, and more**.
 
-## Overview
-The website offers diverse quizzes and automatically evaluates user answers, providing instant feedback on their programming proficiency. It aims to be an engaging tool for learners and professionals to assess and improve their coding skills.
+---
+## 🔍 Overview
+📝 The website provides an intuitive interface to display quiz lists, questions, and sample feedback.
 
-## Key Features
-- **Diverse Quizzes**: Covering a wide range of programming languages.
-- **Auto-Grading**: Answers are evaluated instantly, offering accurate results.
-- **User-Friendly Interface**: Designed for an intuitive and seamless experience.
+📌 **Note:** This project is **frontend-only**, meaning it does not include grading or backend logic.
 
-## Getting the Source Code and Running the Application
-To set up and run the Programming Languages Quiz Website, follow the steps below.
+---
+## ✨ Key Features
+✅ **Quiz List Display**: Easily select quizzes by topic.
+✅ **User-Friendly Interface**: Intuitive and easy to navigate.
+✅ **Instant Feedback**: Displays sample results (without real logic processing).
 
-### Prerequisites
-- A modern web browser (e.g., Google Chrome, Brave, Firefox).
-- A local server environment (if running locally) such as XAMPP or WAMP.
+---
+## ⚙️ How to Use the UI
 
-### Installation
-1. Clone the repository to your local machine:
+### 📌 Requirements
+- 🌐 A modern web browser (e.g., **Google Chrome, Brave, Firefox**).
+
+### 🚀 Installation
+1️⃣ Clone the repository to your local machine:
    ```bash
    git clone https://github.com/NgoDuongwww/web_trac_nghiem.git
    ```
-2. Set up the required database by importing the provided SQL file.
-3. Configure the database connection in the `config.php` file.
-4. Launch the application on your local server or deploy it online.
+2️⃣ Open the `index.html` file in your browser to view the interface.
 
-## How to Use
-1. Select a programming language quiz from the homepage.
-2. Answer the multiple-choice questions.
-3. Submit your answers to view your score and detailed feedback.
+---
+## 🎮 How It Works
+1️⃣ Select a **programming language quiz** from the homepage.
+2️⃣ View the list of **multiple-choice questions**.
+3️⃣ Submit answers and receive sample feedback (without actual logic processing). 📊
 
-## Contributing
-We welcome contributions! Feel free to open an issue or submit a pull request if you have ideas or improvements for the project.
+---
+## 🛠 Technologies Used
+### 🌐 **Frontend**
+- <img src="Image/icon/html.svg"> **HTML**
+- <img src="Image/icon/css3.svg"> **CSS**
+- <img src="Image/icon/js.svg"> **JavaScript**
 
-## Contact
-For inquiries or support, please email us at **ngoduongw2004@gmail.com**.
+### 🧩 **Framework**
+- <img src="Image/icon/bootstrap.svg"> **Bootstrap**
+- <img src="Image/icon/angular.svg"> **AngularJS**
+
+### 🛠 **Development Tools**
+- <img src="Image/icon/visualstudio_code.svg"> **Visual Studio Code**
+- <img src="Image/icon/git.svg" width="30" height="30"> **Git**
+
+---
+## 🤝 Contributing
+We welcome UI contributions! 🚀 If you have ideas or improvements, feel free to **open an issue** or **submit a pull request** to help improve the project.
+
+💡 *Let's build a visually appealing and user-friendly interface together!* ✨
