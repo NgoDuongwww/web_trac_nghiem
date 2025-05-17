@@ -27,25 +27,6 @@ Welcome to the **Programming Languages Quiz Website UI** project! 🎉 This web 
 ✅ **Instant Feedback**: Displays sample results (without real logic processing).
 
 ---
-## ⚙️ How to Use the UI
-
-### 📌 Requirements
-- 🌐 A modern web browser (e.g., **Google Chrome, Brave, Firefox**).
-
-### 🚀 Installation
-1️⃣ Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/NgoDuongwww/web_trac_nghiem.git
-   ```
-2️⃣ Open the `index.html` file in your browser to view the interface.
-
----
-## 🎮 How It Works
-1️⃣ Select a **programming language quiz** from the homepage.
-2️⃣ View the list of **multiple-choice questions**.
-3️⃣ Submit answers and receive sample feedback (without actual logic processing). 📊
-
----
 ## 🛠 Technologies Used
 ### 🌐 **Frontend**
 - <img src="Image/icon/html.svg"> **HTML**
